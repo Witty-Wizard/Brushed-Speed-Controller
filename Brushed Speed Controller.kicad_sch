@@ -3097,7 +3097,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ISC037N03L5ISATMA1:IC_ISC037N03L5ISATMA1"
+		(property "Footprint" "ISC037N03:IC_ISC037N03L5ISATMA1"
 			(at 158.75 81.28 0)
 			(effects
 				(font
@@ -3433,7 +3433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "ISC037N03L5ISATMA1:IC_ISC037N03L5ISATMA1"
+		(property "Footprint" "ISC037N03:IC_ISC037N03L5ISATMA1"
 			(at 106.68 81.28 0)
 			(effects
 				(font
