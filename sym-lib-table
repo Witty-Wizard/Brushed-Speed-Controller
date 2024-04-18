@@ -1,6 +1,5 @@
 (sym_lib_table
   (version 7)
-  (lib (name "ISC037N03")(type "KiCad")(uri "${KIPRJMOD}/ISC037N03L5ISATMA1.pretty/ISC037N03L5ISATMA1.kicad_sym")(options "")(descr ""))
-  (lib (name "BSC340N08")(type "KiCad")(uri "${KIPRJMOD}/BSC340N08.pretty/BSC340N08NS3.kicad_sym")(options "")(descr ""))
   (lib (name "TC4427")(type "KiCad")(uri "${KIPRJMOD}/TC4427.pretty/TC4427.kicad_sym")(options "")(descr ""))
+  (lib (name "SQJ500AEP-T1-GE3")(type "KiCad")(uri "${KIPRJMOD}/SQJ500AEP-T1-GE3.pretty/SQJ500AEP-T1-GE3.kicad_sym")(options "")(descr ""))
 )
