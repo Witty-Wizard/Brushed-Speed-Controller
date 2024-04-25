@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,8.0.1*%
+%TF.CreationDate,2024-04-25T09:29:02+05:30*%
+%TF.ProjectId,Brushed Speed Controller,42727573-6865-4642-9053-706565642043,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 8.0.1) date 2024-04-25 09:29:02*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X109296200Y-57962800D02*
+X189865000Y-57962800D01*
+X189865000Y-129057400D01*
+X109296200Y-129057400D01*
+X109296200Y-57962800D01*
+M02*
