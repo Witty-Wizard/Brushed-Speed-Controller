@@ -3,6 +3,7 @@
 This project aims to create a Brushed Electronic Speed Controller (ESC) using KiCad. The ESC is designed to control the speed of a brushed DC motor using pulse-width modulation (PWM) signals.
 
 ![Current Test Setup](Assets/pictures/Test%20Setup.jpg)
+![Schematic](Assets/pictures/Schematic.png)
 
 ## Components
 
