@@ -44,4 +44,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
-          path: Code/.pio/build/**/firmware.bin
+          path: ~/Code/.pio/build/**/firmware.bin
