@@ -1,0 +1,41 @@
+name: Generate BOM and Schematic PDF
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  generate-assets:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install KiCad
+      run: |
+        sudo add-apt-repository --yes ppa:kicad/kicad-8.0-nightly
+        sudo apt-get update
+        sudo apt-get install --yes --no-install-recommends kicad
+
+    - name: Generate BOM
+      run: |
+        mkdir -p bom
+        kicad-cli sch export bom --output bom/bom.csv "KICAD/Brushed Speed Controller.kicad_sch"
+
+    - name: Generate Schematic PDF
+      run: |
+        mkdir -p schematics
+        kicad-cli sch export pdf --output schematics/schematic.pdf "KICAD/Brushed Speed Controller.kicad_sch"
+
+    - name: Upload BOM
+      uses: actions/upload-artifact@v4
+      with:
+        name: bom
+        path: bom/bom.csv
+
+    - name: Upload Schematic PDF
+      uses: actions/upload-artifact@v4
+      with:
+        name: schematic
+        path: schematics/schematic.pdf
