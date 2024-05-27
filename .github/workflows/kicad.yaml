@@ -1,4 +1,4 @@
-name: Generate BOM and Schematic PDF
+name: Generate BOM, Schematic PDF, and Gerber Files
 
 on:
   push:
@@ -28,6 +28,11 @@ jobs:
         mkdir -p schematics
         kicad-cli sch export pdf --output schematics/schematic.pdf "Brushed Speed Controller.kicad_sch"
 
+    - name: Generate Gerber Files
+      run: |
+        mkdir -p gerbers
+        kicad-cli pcb export gerbers --output gerbers/ "Brushed Speed Controller.kicad_pcb"
+
     - name: Upload BOM
       uses: actions/upload-artifact@v4
       with:
@@ -39,3 +44,9 @@ jobs:
       with:
         name: schematic
         path: schematics/schematic.pdf
+
+    - name: Upload Gerber Files
+      uses: actions/upload-artifact@v4
+      with:
+        name: gerbers
+        path: gerbers/*
