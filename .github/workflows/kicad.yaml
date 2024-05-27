@@ -21,12 +21,12 @@ jobs:
     - name: Generate BOM
       run: |
         mkdir -p bom
-        kicad-cli sch export bom --output bom/bom.csv "KICAD/Brushed Speed Controller.kicad_sch"
+        kicad-cli sch export bom --output bom/bom.csv "Brushed Speed Controller.kicad_sch"
 
     - name: Generate Schematic PDF
       run: |
         mkdir -p schematics
-        kicad-cli sch export pdf --output schematics/schematic.pdf "KICAD/Brushed Speed Controller.kicad_sch"
+        kicad-cli sch export pdf --output schematics/schematic.pdf "Brushed Speed Controller.kicad_sch"
 
     - name: Upload BOM
       uses: actions/upload-artifact@v4
