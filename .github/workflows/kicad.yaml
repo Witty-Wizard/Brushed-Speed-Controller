@@ -33,6 +33,11 @@ jobs:
         mkdir -p gerbers
         kicad-cli pcb export gerbers --output gerbers/ "Brushed Speed Controller.kicad_pcb"
 
+    - name: Generate Drill Plot
+      run: |
+        mkdir -p gerbers
+        kicad-cli pcb export drill --output gerbers/ "Brushed Speed Controller.kicad_pcb"
+
     - name: Upload BOM
       uses: actions/upload-artifact@v4
       with:
@@ -45,7 +50,7 @@ jobs:
         name: schematic
         path: schematics/schematic.pdf
 
-    - name: Upload Gerber Files
+    - name: Upload Gerber and Drill Files
       uses: actions/upload-artifact@v4
       with:
         name: gerbers
